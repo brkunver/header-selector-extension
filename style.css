@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    @apply font-mono text-white text-center font-medium text-base
+
+}
+
+h1 {
+    @apply font-bold text-lg
+}
+
+h2 {
+    @apply font-bold text-lg underline underline-offset-1 decoration-1
+}
