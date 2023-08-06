@@ -2,15 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    @apply font-mono text-white text-center font-medium text-base
-
+body {
+  @apply font-mono text-white text-center font-medium text-base;
 }
 
 h1 {
-    @apply font-bold text-lg
+  @apply font-bold text-2xl;
 }
 
 h2 {
-    @apply font-bold text-lg underline underline-offset-1 decoration-1
+  @apply font-bold text-xl underline underline-offset-1 decoration-1;
+}
+
+button {
+  @apply mx-auto my-4 block border border-gray-400 font-bold bg-emerald-900 px-2 rounded-lg py-1 text-lg hover:scale-105 transition-all ease-in-out duration-100 hover:bg-emerald-700 active:bg-emerald-600;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-blue-900;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-white rounded-lg h-10;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
 }
